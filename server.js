@@ -36,11 +36,6 @@ app.use(express.urlencoded({ limit: '50mb', extended: true, parameterLimit: 1000
 app.use('', router);
 const PORT = process.env.PORT || 3000;
 
-app.post('/', (req, res) => {
-    console.log(req.body)
-    console.log("Hello World")
-});
-
 app.listen(PORT, () => {
     console.log(`App listening on ${PORT}`);
 });
